@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devinette transport IDF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <h1 class="title">Devinette transport IDF - Accueil</h1>
+    <div class="container">
+        <div class="card"><label for="reseau">Réseau : </label>
+        <select id="reseau">
+            <option value="null" selected disabled>Choisir un réseau</option>
+            <option value="metro">Métro</option>
+            <option value="train">Train/RER</option>
+            <option value="bus" disabled>Bus &lpar;À venir&rpar;</option>
+            <option value="tram" disabled>Tram/Câble &lpar;À venir&rpar;</option>
+        </select></div>
+        <div class="card"><label for="nbQuestions">Nombre de questions : </label>
+        <input id="nbQuestions" type="number" placeholder="Entrer un nombre"></div>
+        <button id="startQuizButton" class="card">Démarrer</button>
+    </div>
+
+    <script src="accueil.js"></script>
+</body>
+</html>
