@@ -14,6 +14,10 @@ body {
     color: gray;
 }
 
+#reseau {
+    margin-bottom: 10px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -29,7 +33,7 @@ body {
     padding: 20px;
 }
 
-.card {
+.card, .ligne {
     margin: 5px;
 }
 
@@ -47,8 +51,22 @@ img {
     gap: 10px;
 }
 
-#valider {
+.bouton {
     margin-top: 15px;
+    background-color: #3333FF;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bouton:hover {
+    background-color: blue;
+}
+
+.resultBtns, #resultScore {
+    margin-left: 20px;
 }
 
 .result-block {
@@ -64,10 +82,6 @@ img {
 
 .bonnes, .utilisateur {
     margin-bottom: 10px;
-}
-
-.ligne {
-    margin: 3px;
 }
 
 @media (prefers-color-scheme: dark) {

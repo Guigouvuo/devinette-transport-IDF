@@ -4,6 +4,7 @@ const nbQuestions = document.getElementById("nbQuestions");
 
 const startQuiz = () => {
     if (reseauSelect.value === "null" || !nbQuestions.value) {
+        window.alert("Veuillez sélectionner un réseau et saisir un nombre de questions !")
         return;
     }
 

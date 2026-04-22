@@ -1,4 +1,4 @@
-const version = "2.1";
+const version = "2.2";
 const db = {
     "metro": {
         "lignes": [

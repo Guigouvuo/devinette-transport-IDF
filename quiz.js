@@ -14,8 +14,6 @@ if (reseau === "metro") {
     donnees = db.metro;
 } else if (reseau === "train") {
     donnees = db.train;
-} else if (reseau === "bus") {
-    donnees = db.bus;
 } else if (reseau === "tram") {
     donnees = db.tram;
 } else {
