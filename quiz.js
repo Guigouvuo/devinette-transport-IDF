@@ -8,6 +8,11 @@ const buttons = document.getElementById("buttons");
 const valider = document.getElementById("valider");
 const avancement = document.getElementById("avancement");
 
+// Forcer la page à se recharger à l'affichage
+window.onpageshow = (event) => {
+  if (event.persisted) location.reload();
+};
+
 let donnees;
 
 if (reseau === "metro") {

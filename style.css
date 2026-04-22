@@ -69,6 +69,10 @@ img {
     margin-left: 20px;
 }
 
+.resultBtns {
+    margin-bottom: 30px;
+}
+
 .result-block {
     border: 1px solid #ccc;
     border-radius: 8px;
