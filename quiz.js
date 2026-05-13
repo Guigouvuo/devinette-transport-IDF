@@ -125,7 +125,7 @@ const nextQuestion = () => {
 
     // Si quiz terminé, sauvegarde dans sessionStorage
     if (currentQuestionIndex >= stationsAleatoires.length) {
-        window.sessionStorage.setItem("sessionActuelle", JSON.stringify({
+        window.sessionStorage.setItem("TIDF:sessionActuelle", JSON.stringify({
             scoreTotal: score,
             totalQuestions: stationsAleatoires.length,
             details: sessionActuelle

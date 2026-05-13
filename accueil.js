@@ -8,8 +8,8 @@ const startQuiz = () => {
         return;
     }
 
-    window.sessionStorage.setItem("reseau", reseauSelect.value);
-    window.sessionStorage.setItem("questions", nbQuestions.value);
+    window.sessionStorage.setItem("TIDF:reseau", reseauSelect.value);
+    window.sessionStorage.setItem("TIDF:questions", nbQuestions.value);
     // Rediriger vers la page du quiz
     window.location.href = `quiz.html?reseau=${reseauSelect.value}&questions=${nbQuestions.value}`;
 };

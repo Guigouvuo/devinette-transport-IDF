@@ -4,8 +4,8 @@ const recommencer = document.getElementById("recommencer");
 const accueilBtn = document.getElementById("accueilBtn");
 const versionText = document.getElementById("version");
 
-const data = JSON.parse(sessionStorage.getItem("sessionActuelle"));
-const reseau = window.sessionStorage.getItem("reseau");
+const data = JSON.parse(sessionStorage.getItem("TIDF:sessionActuelle"));
+const reseau = window.sessionStorage.getItem("TIDF:reseau");
 
 let donnees;
 
@@ -88,11 +88,11 @@ const renderPage = () => {
 renderPage()
 
 recommencer.addEventListener("click", () => {
-    window.sessionStorage.removeItem("sessionActuelle");
+    window.sessionStorage.removeItem("TIDF:sessionActuelle");
     window.history.back();
 });
 
 accueilBtn.addEventListener("click", () => {
-    sessionStorage.removeItem("sessionActuelle");
+    sessionStorage.removeItem("TIDF:sessionActuelle");
     window.location.href = "index.html";
 });
